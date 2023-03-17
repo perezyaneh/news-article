@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.button-head{
+  margin-top: 10px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.publish, .delete{
+  background: none;
+  border-radius: 5px;
+  width: 60px;
+  height: 35px;
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.publish{
+  background-color: #C9EEFF;
+  border: 1px solid #62CDFF;
+  color: #62CDFF;
+}
+
+.delete{
+  background-color: #FAD4D4;
+  border: 1px solid #FD5D5D;
+  color: #FD5D5D;
+}
+
+.search-bar{
+  margin-right: 50px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+ 
+  border: 1px solid #E1E5EA;
+}
+
+.search-bar::placeholder{
+  color: #E1E5EA;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: #DDDDDD;
+  margin: auto;
+  margin-top: 15px;
+  width: 95%;
+  border-radius: 5px;
+}
+
+.card-title{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-left: 50px;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.card-subtitle{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  gap: 5px;
+  color: #797A7E;
+  font-weight: bold;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+.content-text {
+  width: 700px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  color: #AAAAAA;
+}
+
+.read-full{
+  border: none;
+  background: none;
+  color: blue;
+  cursor: pointer;
+}
+
+img{
+  width: 15px;
+  height: 15px;
+}
+
+/* .bg-modal{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200,200,200);
+  position: fixed;
+  opacity: 0.5;
+} */
+
+.modal-container{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-modal{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  padding: 15px 15px 15px 15px;
+  border-radius: 5px;
+}
+
+.modal-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.modal-subtitle{
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.modal-content{
+  margin-top: 25px;
+  border: 2px dashed black;
+  height: 500px;
+}
+
+.modal-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.exit-button{
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
